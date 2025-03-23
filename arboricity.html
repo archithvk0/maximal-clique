@@ -27,18 +27,32 @@
         border-radius: 5px;
         overflow-x: auto;
       }
+      graph-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .graph-container img {
+        width: 80%; /* Reduces the image to 1/5th of its original width */
+        height: auto; /* Maintains aspect ratio */
+        display: block;
+        margin: 0 auto; /* Centers the image */
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+      }
     </style>
   </head>
   <body>
     <div class="content">
-      <h1>Arboricity-Based CLIQUE Algorithm</h1>
+      <h1>Chiba's Algorithm</h1>
       
       >
       <h3>Implementation</h3>
       <p>Code snippet goes here...</p>
       <h3>Performance Results</h3>
       <div class="graph-container">
-        <img src="arboricity-results.png" alt="Arboricity Performance Graph" />
+        <img src="arboricity-results.jpg" alt="Arboricity Performance Graph" />
       </div>
       <a href="algorithms.html" class="btn">Back to Algorithms</a>
     </div>
