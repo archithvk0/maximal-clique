@@ -19,7 +19,8 @@
         padding: 20px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
-        text-align: left;
+        text-align: center; /* Ensures everything inside is centered */
+        overflow: hidden; /* Prevents any overflow */
       }
       .graph-container {
         text-align: center;
@@ -27,12 +28,14 @@
       }
 
       .graph-container img {
-        max-width: 100%; /* Ensures image resizes to fit the container */
+        max-width: 100%; /* Ensures the image fits inside the container */
         height: auto; /* Maintains aspect ratio */
         display: block;
         margin: 0 auto; /* Centers the image */
         border-radius: 5px;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        object-fit: contain; /* Ensures the entire image fits without cropping */
       }
     </style>
   </head>
