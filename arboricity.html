@@ -47,9 +47,21 @@
     <div class="content">
       <h1>Chiba's Algorithm</h1>
       
-      >
-      <h3>Implementation</h3>
-      <p>Code snippet goes here...</p>
+      <p>Chiba's Algorithm is an efficient method for listing all maximal cliques in a graph, leveraging <strong>arboricity</strong> to optimize the search.</p>
+
+<ul>
+  <li>Operates by decomposing the graph into low-degree subgraphs for efficient clique enumeration.</li>
+  <li>Utilizes the concept of <strong>k-core decomposition</strong> to reduce redundant computations.</li>
+  <li>Processes edges in a structured manner:</li>
+  <ul>
+    <li><strong>High-degree vertices are processed first,</strong> reducing the number of edges explored per vertex.</li>
+    <li><strong>Each edge is considered only once,</strong> improving efficiency.</li>
+  </ul>
+  <li>Runs in <strong>O(a(G) * m)</strong> time, where <strong>a(G)</strong> is the arboricity of the graph and <strong>m</strong> is the number of edges.</li>
+  <li>Works best for <strong>sparse graphs</strong> with low arboricity, making it highly efficient for large-scale networks.</li>
+</ul>
+
+    
       <h3>Performance Results</h3>
       <div class="graph-container">
         <img src="arboricity-results.jpg" alt="Arboricity Performance Graph" />
