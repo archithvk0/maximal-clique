@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Email-Enron Dataset</title>
+    <title>Wiki-Vote Dataset</title>
     <style>
       body {
         font-family: Arial, sans-serif;
-        text-align: center;
+        
         background-color: #f4f4f4;
         margin: 0;
         padding: 0;
@@ -19,11 +19,22 @@
         padding: 20px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
-        text-align: left;
+       
+        overflow: hidden; /* Prevents any overflow */
       }
       .graph-container {
         text-align: center;
         margin-top: 20px;
+      }
+
+      .graph-container img {
+        width: 80%; /* Reduces the image to 1/5th of its original width */
+        height: auto; /* Maintains aspect ratio */
+        display: block;
+        margin: 0 auto; /* Centers the image */
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        padding: 10px;
       }
     </style>
   </head>
@@ -32,8 +43,23 @@
       <h1>Email-Enron Dataset</h1>
       <h2>Description</h2>
       <p>
-        The Email-Enron dataset contains email communication between Enron
-        employees...
+        The Email-Enron dataset represents the email communication network within the 
+Enron Corporation. It was made public by the Federal Energy Regulatory 
+Commission (FERC) during its investigation into the company's financial scandal. The 
+dataset contains approximately half a million emails, capturing interactions between 
+employees and external parties. 
+The dataset is structured as an undirected graph, where: 
+● Nodes represent unique email addresses. 
+● Edges indicate at least one email exchange between two addresses (i.e., if an 
+email was sent from address i to address j, an undirected edge exists 
+between them). 
+Additionally, non-Enron email addresses appear in the dataset as external nodes 
+(acting as sources and sinks), meaning we only observe their communication with 
+Enron employees, but not their internal interactions. 
+This dataset provides valuable insights into corporate email communication 
+patterns, social network structures, and has been widely used for graph-based 
+analysis of fraud detection, anomaly detection, and organizational behavior 
+modeling.
       </p>
 
       <h2>Link</h2>
