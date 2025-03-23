@@ -32,19 +32,18 @@
   <body>
     <div class="content">
       <h1>Bron-Kerbosch Algorithm with Degeneracy Ordering</h1>
-      <p>Description of the Bron-Kerbosch algorithm...</p>
-      <h3>Pseudocode</h3>
-      <pre>
-        procedure BronKerbosch(R, P, X)
-            if P and X are both empty:
-                report R as a maximal clique
-            for each vertex v in P:
-                BronKerbosch(R ∪ {v}, P ∩ N(v), X ∩ N(v))
-                P = P - {v}, X = X ∪ {v}
-        </pre
-      >
-      <h3>Implementation</h3>
-      <p>Code snippet goes here...</p>
+      <p>It is recursive and uses depth-first search (DFS).</p>
+
+<ul>
+  <li>Operates in three main sets:</li>
+  <ul>
+    <li><strong>R (current clique):</strong> Vertices that form a clique.</li>
+    <li><strong>P (potential candidates):</strong> Vertices that can still be added to R.</li>
+    <li><strong>X (already explored vertices):</strong> Vertices that were part of previous cliques.</li>
+  </ul>
+  <li>The algorithm explores all possible combinations of vertices to identify maximal cliques.</li>
+</ul>
+      
       <h3>Performance Results</h3>
       <div class="graph-container">
         <img
